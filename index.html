@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>Welcome to Joquarium</title>
+    <link href="images/fishlogo.png" rel="shortcut icon" type="image/png">
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            overflow: hidden;
+        }
+
+        .bgvideo {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1;
+        }
+
+        h1 {
+            position: absolute;
+            font-size: 50px;
+            top: 40%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            color: white;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            z-index: 1;
+        }
+
+        a {
+            display: block;
+            color: white;
+            font-size: 40px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            text-decoration: none;
+            position: absolute;
+            top: 70%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            background-color: rgba(79, 74, 163, 0.5);
+            padding: 10px;
+            border-radius: 50px;
+            z-index: 1; 
+            transition: background-color 0.3s ease;
+        }
+
+        a:hover {
+            background-color: rgb(122, 68, 239);
+        }
+    </style>
+    </head>
+<body>
+    <video loop autoplay muted class="bgvideo">
+        <source src="media/Fish Swimming Against Dark Background.mp4" type="video/mp4">
+    </video>
+    <h1>Ready to discover the underwater world?</h1>
+    <a href="home page.html">Yes.</a>
+</body>
+</html>
